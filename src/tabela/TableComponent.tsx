@@ -53,14 +53,14 @@ const rows = [
 ];
 
 const rows1 = [
-    ...rows, ...rows, ...rows, ...rows, ...rows, ...rows,
+    ...rows
 ]
 
 const TableComponent = () => {
     return (
 
         <Box
-            bgcolor="#cdd0dc"
+            // bgcolor="#cdd0dc"
             p={8}
             display="flex"
             justifyContent="center"
@@ -81,9 +81,9 @@ const TableComponent = () => {
                         {
                             rows1.map((row, index) => (
                                 <TableRow hover
-                                    style={{
-                                        backgroundColor: index % 2 === 0 ? '#eff4f8' : ''
-                                    }}
+                                    // style={{
+                                    //     backgroundColor: index % 2 === 0 ? '#eff4f8' : ''
+                                    // }}
                                     onClick={() => alert(`Você clicou na linha ${index}. Nome: ${row.name}`)}
                                     sx={{
                                         '&:hover': {

@@ -10,7 +10,7 @@ const Login = () => {
             // bgcolor="#7159c1"
             display="flex"
             flexDirection="column"
-            minHeight="100vh"
+            minHeight="60vh"
             alignItems="center"
             justifyContent="center"
         >
