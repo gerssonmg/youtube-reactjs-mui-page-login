@@ -5,6 +5,7 @@ import DarkModeCustom from './tabela/darkmode/DarkModeCustom'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { createContext, useMemo, useState } from 'react';
+import FeedbackComponents from './PlaceholderUI/FeedbackComponent';
 
 export const ColorModeContext = createContext({ toggleColorMode: () => { } });
 
@@ -43,9 +44,10 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
 
-        <DarkModeCustom />
+        <FeedbackComponents />
+        {/* <DarkModeCustom />
         <TableComponent />
-        <Login />
+        <Login /> */}
 
       </ThemeProvider>
     </ColorModeContext.Provider>
