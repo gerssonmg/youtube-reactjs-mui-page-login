@@ -13,6 +13,17 @@ const Image = styled('img')({
     width: '100%',
 });
 
+
+const listThumb = [
+    "https://i.ytimg.com/vi/dXgmJWvO5DI/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/kfrgOAmzQ68/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/Xxo-bMzD5cM/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/Ztv5Fz51xs8/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/0pwR4i028LM/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/HjE-HLca2fw/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/4c6-zABJmQE/maxresdefault.jpg"
+]
+
 function SkeletonChildrenDemo(props: { loading?: boolean }) {
     const { loading = false } = props;
 
@@ -25,7 +36,7 @@ function SkeletonChildrenDemo(props: { loading?: boolean }) {
                             <Avatar />
                         </Skeleton>
                     ) : (
-                        <Avatar src="https://pbs.twimg.com/profile_images/877631054525472768/Xp5FAPD5_reasonably_small.jpg" />
+                        <Avatar src="https://yt3.ggpht.com/9P0t5Seaabd_wcm2wxy7UO39RV-gWPA6PoFY7-FILhvs_WHqRahS84XKvWPTfMoDhuNzd286=s48-c-k-c0x00ffffff-no-rj" />
                     )}
                 </Box>
                 <Box sx={{ width: '100%' }}>
@@ -34,7 +45,7 @@ function SkeletonChildrenDemo(props: { loading?: boolean }) {
                             <Typography>.</Typography>
                         </Skeleton>
                     ) : (
-                        <Typography>Ted</Typography>
+                        <Typography>Gérson Aguiar | Dev</Typography>
                     )}
                 </Box>
             </Box>
@@ -43,10 +54,7 @@ function SkeletonChildrenDemo(props: { loading?: boolean }) {
                     <div style={{ paddingTop: '57%' }} />
                 </Skeleton>
             ) : (
-                <Image
-                    src="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/72bda89f-9bbf-4685-910a-2f151c4f3a8a/NicolaSturgeon_2019T-embed.jpg?w=512"
-                    alt=""
-                />
+                <Image src={listThumb[Math.floor(Math.random() * listThumb.length)]} alt="Random Thumbnail" />
             )}
         </div>
     );
@@ -158,7 +166,7 @@ export default function FeedbackComponents() {
                         {/* For other variants, adjust the size with `width` and `height` */}
                         <Skeleton variant="circular" width={40} height={40} />
                         <Skeleton variant="circular" width={40} height={40} />
-                        <Skeleton variant="circular" width={800} height={80} />
+                        <Skeleton variant="circular" width={40} height={40} />
                         <Skeleton animation={false} variant="rectangular" width={210} height={60} />
                         <Skeleton animation="pulse" variant="rectangular" width={210} height={60} />
                         <Skeleton animation="wave" variant="rectangular" width={210} height={60} />

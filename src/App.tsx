@@ -45,9 +45,9 @@ function App() {
         <CssBaseline />
 
         <FeedbackComponents />
-        {/* <DarkModeCustom />
+        <DarkModeCustom />
         <TableComponent />
-        <Login /> */}
+        <Login />
 
       </ThemeProvider>
     </ColorModeContext.Provider>
