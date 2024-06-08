@@ -25,7 +25,7 @@ const Login = () => {
             <Typography
                 align="center">
                 <strong>
-                    Sign in - v0.0.1
+                    Sign in - v0.0.2
                 </strong>
             </Typography>
             <Box
