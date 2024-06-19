@@ -23,7 +23,8 @@ export function Toggle() {
         >
             {theme.palette.mode === 'dark' ? "Modo Avião" :
                 "O dia esta ensolarado"}
-            <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
+            <IconButton className="star-burst"
+                sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
                 {theme.palette.mode === 'dark' ? <NightsStayIcon /> : <FlightTakeoffIcon />}
             </IconButton>
         </Box>
